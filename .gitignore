@@ -43,5 +43,5 @@
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,go
 
 publish/*
-*/.keycloak
-keycloak/keycloak
+**/.keycloak
+src/keycloak/keycloak

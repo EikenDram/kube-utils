@@ -3,6 +3,8 @@
 | NAME     | DESCRIPTION
 |----------|-----------------------------
 | keycloak | Tool for managing [Keycloak](https://www.keycloak.org/) server
+| web-api  | API for web app
+| web-ui   | UI for web app
 
 ## Keycloak
 
