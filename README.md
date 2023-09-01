@@ -45,3 +45,11 @@ Add user:
 ```sh
 curl -k -X POST http://keycloak.k3s.local/admin/realms/master/users/ -H "Content-Type: application/json" -H "Authorization: Bearer <access token>" --data '{"firstName":"xyz","lastName":"xyz", "username":"xyz123","email":"demo2@gmail.com", "enabled":"true","credentials":[{"type":"password","value":"test123","temporary":false}]}'
 ```
+
+## Web app
+
+Will do reverse proxy to Keycloak for access, so don't have to do any auth in application
+
+UI will have a list of tools,
+
+Keycloak tool will be a file uploader and process

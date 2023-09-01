@@ -1,0 +1,7 @@
+{
+    "locale": {
+        "appName": "KubeUtils",
+        "appDesc": "Tools for managing kubernetes cluster",
+        "keycloak": "Keycloak"
+    }
+}
