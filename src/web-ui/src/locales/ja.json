@@ -2,6 +2,5 @@
     "app": {
         "name": "KubeUtils",
         "desc": "Utilities for managing Kubernetes cluster"
-    },
-    "cluster": "Cluster"
+    }
 }

@@ -1,18 +1,16 @@
 <template>
   <v-app-bar flat>
     <v-app-bar-title>
-      <v-icon icon="mdi-circle-slice-4" />
+      <router-link to="/">
+        <v-icon color="black" class="ml-2 mr-2" icon="fa-solid fa-cubes" />
+      </router-link>
 
-      <a to="/">{{ locale.AppName }}</a>
-      
+      {{ $t('cluster') }}
+
     </v-app-bar-title>
   </v-app-bar>
 </template>
 
 <script lang="ts" setup>
-import {inject} from 'vue'
-import type {RuntimeConfiguration} from "@/plugins/runtimeConfiguration";
-
-const rc = inject('runtimeConfiguration') as RuntimeConfiguration
-const locale = rc.locale
+ //
 </script>

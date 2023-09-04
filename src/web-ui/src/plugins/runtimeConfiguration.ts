@@ -1,16 +1,13 @@
+// runtime configuration
+
 import type { App, Plugin } from 'vue';
 
+// runtime configuration
 export interface RuntimeConfiguration {
-    locale: LocaleConfiguration
+    
 }
 
-// localization
-export interface LocaleConfiguration {
-    AppName: string,
-    AppDescription: string,
-    Keycloak: string,
-}
-
+// runtime configuration options
 export interface RuntimeConfigurationOptions {
     variables: RuntimeConfiguration
 }
@@ -32,13 +29,8 @@ export const loadRuntimeConfiguration = async (): Promise<RuntimeConfigurationOp
     const resp = await fetch('/config.json')
     const value = await resp.json()
 
+    // not type safe but
     return {
-        variables: {
-            locale: {
-                AppName: value.locale.appName,
-                AppDescription: value.locale.appDesc,
-                Keycloak: value.locale.keycloak,
-            }
-        } as RuntimeConfiguration
+        variables: value as RuntimeConfiguration
     } as RuntimeConfigurationOptions
 }
