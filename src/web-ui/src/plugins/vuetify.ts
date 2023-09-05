@@ -15,7 +15,8 @@ import 'vuetify/styles'
 
 import { createVuetify } from 'vuetify'
 
-import { VStepper } from 'vuetify/labs/VStepper'
+import * as components from 'vuetify/components'
+import * as labsComponents from 'vuetify/labs/components'
 
 // https://vuetifyjs.com/en/introduction/why-vuetify/#feature-guides
 export default createVuetify({
@@ -37,6 +38,7 @@ export default createVuetify({
     },
   },
   components: {
-    VStepper,
+    ...components,
+    ...labsComponents,
   },
 })

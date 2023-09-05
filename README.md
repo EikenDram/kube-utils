@@ -52,4 +52,4 @@ Will do reverse proxy to Keycloak for access, so don't have to do any auth in ap
 
 UI will have a list of tools,
 
-Keycloak tool will be a file uploader and process
+Keycloak tool will be a file uploader and processing

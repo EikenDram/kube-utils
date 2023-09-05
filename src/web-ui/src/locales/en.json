@@ -3,5 +3,33 @@
         "name": "KubeUtils",
         "desc": "Utilities for managing Kubernetes cluster"
     },
-    "cluster": "Cluster"
+    "cluster": "Cluster",
+    "keycloak": {
+        "name": "Keycloak",
+        "list": "List",
+        "datetime": "Date and time",
+        "upload": "Upload",
+        "next": "Next",
+        "confirm": "Confirm",
+        "cancel": "Cancel",
+        "previous": "Previous",
+        "processFile": "Process file",
+        "selectFile": "Select file",
+        "file": "File",
+        "selectOperation": "Select operation",
+        "operation": {
+            "update": "Update",
+            "create": "Create",
+            "delete": "Delete"
+        },
+        "selectFormat": "Select file format",
+        "format": {
+            "space": "Space separated values",
+            "json": "JSON",
+            "xml": "XML"
+        },
+        "preview": "Preview",
+        "processing": "Processing",
+        "result": "Result"
+    }
 }
