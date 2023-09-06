@@ -44,4 +44,6 @@
 
 publish/*
 **/.keycloak
-src/keycloak/keycloak
+/keycloak/keycloak
+**/files/*
+**/logs/*
